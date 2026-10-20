@@ -107,19 +107,30 @@
     .channel svg { width: 1.2em; height: 1.2em; fill: currentColor; }
     .channel .sep { opacity: 0.5; }
     .about {
-      max-width: 640px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      max-width: 900px;
       margin: 3.5rem auto 0;
     }
-    .about p { margin: 0.3rem 0 0; }
+    .about .fr { text-align: right; }
+    .about .en { text-align: left; }
+    .about p { margin: 0.3rem 0 0; color: var(--muted); }
     .about .tagline {
-      margin-top: 1.25rem;
+      margin: 0;
+      color: var(--fg);
       font-size: clamp(1.05rem, 2.6vw, 1.4rem);
       font-weight: 500;
       letter-spacing: 0.06em;
       text-transform: uppercase;
     }
-    .about .tagline:first-child { margin-top: 0; }
-    .about .en { color: var(--muted); }
+    @media (max-width: 900px) {
+      .about {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+      .about .fr, .about .en { text-align: center; }
+    }
     .contact {
       max-width: 520px;
       margin: 3.5rem auto 0;
@@ -208,10 +219,14 @@
       <span>Notre chaîne YouTube</span><span class="sep" aria-hidden="true">·</span><span lang="en">Our YouTube channel</span>
     </a>
     <section class="about">
-      <p class="tagline">Production vidéo sur mesure</p>
-      <p>Des histoires racontées avec soin, de l’idée au montage final.</p>
-      <p class="tagline en" lang="en">Boutique video production</p>
-      <p class="en" lang="en">Stories told with care, from first idea to final cut.</p>
+      <div class="fr">
+        <p class="tagline">Production vidéo sur mesure</p>
+        <p>Des histoires racontées avec soin, de l’idée au montage final.</p>
+      </div>
+      <div class="en" lang="en">
+        <p class="tagline">Boutique video production</p>
+        <p>Stories told with care, from first idea to final cut.</p>
+      </div>
     </section>
     <section class="contact">
       <h2>Contact <span class="en" lang="en">· Get in touch</span></h2>
