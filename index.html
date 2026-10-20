@@ -37,10 +37,33 @@
       -webkit-mask-image: radial-gradient(ellipse 50% 50% at center, #000 55%, transparent 100%);
               mask-image: radial-gradient(ellipse 50% 50% at center, #000 55%, transparent 100%);
     }
+    .film {
+      max-width: 720px;
+      margin: 2rem auto 0;
+    }
+    .film h2 {
+      margin: 0;
+      font-size: clamp(1.05rem, 2.6vw, 1.4rem);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .film p { margin: 0.25rem 0 0; }
+    .film .en { color: var(--muted); }
+    .film > .en {
+      font-size: 0.9rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .film blockquote {
+      margin: 1.25rem 0 0;
+      font-style: italic;
+      font-size: 1.05rem;
+    }
     .video {
       width: min(720px, 100%);
       aspect-ratio: 16 / 9;
-      margin: 2.5rem auto 0;
+      margin: 1.75rem auto 0;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
@@ -81,6 +104,14 @@
 <body>
   <main>
     <img class="logo" src="samui-interactiff-logo.png" alt="samui interactiff" width="948" height="503">
+    <section class="film">
+      <h2>Le premier court métrage d’Armand Bellacroix</h2>
+      <p class="en" lang="en">The first short film by Armand Bellacroix</p>
+      <blockquote>
+        <p>Un innocent à la dérive trouve une compassion silencieuse dans la tempête.</p>
+        <p class="en" lang="en">An innocent adrift finds quiet compassion in the storm.</p>
+      </blockquote>
+    </section>
     <div class="video">
       <iframe src="https://www.youtube-nocookie.com/embed/WRBHz2lpUYQ" title="Samui Interactive — YouTube" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
     </div>
