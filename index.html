@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samui Interactiff — Bientôt disponible</title>
+  <meta name="description" content="Samui Interactiff — notre site arrive bientôt.">
+  <meta property="og:title" content="Samui Interactiff">
+  <meta property="og:description" content="Bientôt disponible.">
+  <meta property="og:image" content="https://samui-interactiff.fr/samui-interactiff-logo.png">
+  <meta name="theme-color" content="#2b282a">
+  <link rel="icon" href="samui-interactiff-logo.png">
+  <style>
+    :root {
+      --bg: #2b282a;
+      --fg: #efe9dc;
+      --muted: #a39d93;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+      background: radial-gradient(ellipse at center, #363234 0%, var(--bg) 70%);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      text-align: center;
+    }
+    .logo {
+      width: min(560px, 90vw);
+      height: auto;
+      /* Fade the photo's edges into the page background */
+      -webkit-mask-image: radial-gradient(ellipse 50% 50% at center, #000 55%, transparent 100%);
+              mask-image: radial-gradient(ellipse 50% 50% at center, #000 55%, transparent 100%);
+    }
+    h1 {
+      margin: 1.5rem 0 0.5rem;
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+    footer {
+      position: absolute;
+      bottom: 1.25rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="samui-interactiff-logo.png" alt="samui interactiff" width="948" height="503">
+    <h1>Bientôt disponible</h1>
+    <p>Coming soon</p>
+  </main>
+  <footer>&copy; <span id="year">2026</span> Samui Interactiff</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
