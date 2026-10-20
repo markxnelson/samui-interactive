@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Samui Interactiff — Bientôt disponible</title>
-  <meta name="description" content="Samui Interactiff — notre site arrive bientôt.">
+  <title>Samui Interactiff</title>
+  <meta name="description" content="Samui Interactiff — retrouvez nos vidéos sur YouTube. Watch our videos on YouTube.">
   <meta property="og:title" content="Samui Interactiff">
-  <meta property="og:description" content="Bientôt disponible.">
+  <meta property="og:description" content="Retrouvez nos vidéos sur YouTube. Watch our videos on YouTube.">
   <meta property="og:image" content="https://samui-interactive.com/samui-interactiff-logo.png">
   <meta name="theme-color" content="#2b282a">
   <link rel="icon" href="samui-interactiff-logo.png">
@@ -36,18 +36,6 @@
       /* Fade the photo's edges into the page background */
       -webkit-mask-image: radial-gradient(ellipse 50% 50% at center, #000 55%, transparent 100%);
               mask-image: radial-gradient(ellipse 50% 50% at center, #000 55%, transparent 100%);
-    }
-    h1 {
-      margin: 1.5rem 0 0.5rem;
-      font-size: clamp(1.25rem, 3vw, 1.75rem);
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-    p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 1rem;
     }
     .video {
       width: min(720px, 100%);
@@ -81,6 +69,7 @@
       color: var(--bg);
     }
     .channel svg { width: 1.2em; height: 1.2em; fill: currentColor; }
+    .channel .sep { opacity: 0.5; }
     main { width: 100%; }
     footer {
       margin-top: 3rem;
@@ -92,14 +81,12 @@
 <body>
   <main>
     <img class="logo" src="samui-interactiff-logo.png" alt="samui interactiff" width="948" height="503">
-    <h1>Bientôt disponible</h1>
-    <p>Coming soon</p>
     <div class="video">
-      <iframe src="https://www.youtube-nocookie.com/embed/WRBHz2lpUYQ" title="Samui Interactive sur YouTube" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/WRBHz2lpUYQ" title="Samui Interactive — YouTube" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
     </div>
     <a class="channel" href="https://www.youtube.com/@SamuiInteractive" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
-      Notre chaîne YouTube
+      <span>Notre chaîne YouTube</span><span class="sep" aria-hidden="true">·</span><span lang="en">Our YouTube channel</span>
     </a>
   </main>
   <footer>&copy; <span id="year">2026</span> Samui Interactiff</footer>
