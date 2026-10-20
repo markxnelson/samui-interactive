@@ -49,9 +49,41 @@
       color: var(--muted);
       font-size: 1rem;
     }
+    .video {
+      width: min(720px, 100%);
+      aspect-ratio: 16 / 9;
+      margin: 2.5rem auto 0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+    }
+    .video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .channel {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.3rem;
+      border: 1px solid var(--fg);
+      border-radius: 999px;
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .channel:hover, .channel:focus-visible {
+      background: var(--fg);
+      color: var(--bg);
+    }
+    .channel svg { width: 1.2em; height: 1.2em; fill: currentColor; }
+    main { width: 100%; }
     footer {
-      position: absolute;
-      bottom: 1.25rem;
+      margin-top: 3rem;
       font-size: 0.8rem;
       color: var(--muted);
     }
@@ -62,6 +94,13 @@
     <img class="logo" src="samui-interactiff-logo.png" alt="samui interactiff" width="948" height="503">
     <h1>Bientôt disponible</h1>
     <p>Coming soon</p>
+    <div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/WRBHz2lpUYQ" title="Samui Interactive sur YouTube" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <a class="channel" href="https://www.youtube.com/@SamuiInteractive" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+      Notre chaîne YouTube
+    </a>
   </main>
   <footer>&copy; <span id="year">2026</span> Samui Interactiff</footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
