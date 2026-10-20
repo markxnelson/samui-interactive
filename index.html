@@ -106,6 +106,20 @@
     }
     .channel svg { width: 1.2em; height: 1.2em; fill: currentColor; }
     .channel .sep { opacity: 0.5; }
+    .about {
+      max-width: 640px;
+      margin: 3.5rem auto 0;
+    }
+    .about p { margin: 0.3rem 0 0; }
+    .about .tagline {
+      margin-top: 1.25rem;
+      font-size: clamp(1.05rem, 2.6vw, 1.4rem);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .about .tagline:first-child { margin-top: 0; }
+    .about .en { color: var(--muted); }
     .contact {
       max-width: 520px;
       margin: 3.5rem auto 0;
@@ -193,6 +207,12 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
       <span>Notre chaîne YouTube</span><span class="sep" aria-hidden="true">·</span><span lang="en">Our YouTube channel</span>
     </a>
+    <section class="about">
+      <p class="tagline">Production vidéo sur mesure</p>
+      <p>Des histoires racontées avec soin, de l’idée au montage final.</p>
+      <p class="tagline en" lang="en">Boutique video production</p>
+      <p class="en" lang="en">Stories told with care, from first idea to final cut.</p>
+    </section>
     <section class="contact">
       <h2>Contact <span class="en" lang="en">· Get in touch</span></h2>
       <form id="contact-form">
